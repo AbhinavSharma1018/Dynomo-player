@@ -1,0 +1,212 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.side-bar{
+    background-color: #000000;
+    width: 350px;
+    border-radius: 1rem;
+}
+.main-content{
+    background-color: #121212;
+    /* flex=1 se baki dev se sari bachi hui jagah isse mil jaigi */
+    flex: 1;
+    border-radius: 1rem;/*16px*/
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;/*Normal flex se side-side me aa rahe the dono home or search abb dono upper neeche aayenge*/
+    justify-content: center;
+    height: 120px;
+    padding: 0.5rem 1.7 rem;
+}
+.option{
+    line-height: 2.6rem;
+    opacity: 0.7;/*ye hover effect lane ke liye kiya gaya hai*/
+    padding: 0.5rem;
+}
+.option:hover{
+    opacity: 1;
+}
+.option i{
+    font-size: 1.25rem;
+}
+.option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 650px;
+    padding: 0.5rem 0.5rem;
+}
+.option-lib{
+    padding: 1rem 0rem ;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+}
+.option-lib i{
+    margin-left: 35px;
+}
+.option-lib a{
+    margin-left: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.option-lib a:hover{
+    opacity: 1;
+}
+.first-play{
+    background-color: #363837;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    margin-bottom: 50px;
+}
+.first-play button{
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+.first-play button:hover{
+    opacity: 0.8;
+}
+.first-play a{
+    font-weight: bolder;
+}
+.browse-pod a{
+    font-weight: bolder;
+}
+.browse-pod{
+    background-color: #363837;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+.browse-pod button{
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+.browse-pod button:hover{
+    opacity: 0.8;
+}
+.badge{
+    border-radius: 0.8rem;
+}
+.dark-badge{
+    background-color: #211f1f;
+    color: white;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0rem 1rem 0rem ;
+    z-index: 10;/* Sabse upper aa jayega */
+}
+.nav-options img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.nav-options{
+    margin-left: 1rem;
+}
+.sticky-nav-options button{
+    margin-right: 10px;
+    padding: 0.2rem 0.2rem;
+}
+.sticky-nav-options i{
+    margin-right: 20px;
+}
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #363837;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.card-container{
+   display: flex; 
+   flex-wrap: wrap;
+}
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: bolder;
+}
+.card-info{
+    font-weight: lighter;
+    opacity: 0.7;
+}
+.footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.first-lower{
+    width: 25%;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+}
+.second-lower{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+.third-lower{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.first-lower p{
+    color: white;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: small;
+    align-items: center;
+}
